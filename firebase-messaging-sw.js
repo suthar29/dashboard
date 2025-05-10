@@ -27,22 +27,22 @@ messaging.onBackgroundMessage((payload) => {
   
   const notificationOptions = {
     body: `${name}: ${message}`,
-    icon: "assets/notification-icon.png",
+    icon: "./assets/notification-icon.png",
     actions: [
       {
         action: 'whatsapp',
         title: 'WhatsApp',
-        icon: 'assets/whatsapp.png'
+        icon: './assets/whatsapp.png'
       },
       {
         action: 'phone',
         title: 'Call',
-        icon: 'assets/telephone.png'
+        icon: './assets/telephone.png'
       },
       {
         action: 'email',
         title: 'Email',
-        icon: 'assets/email.png'
+        icon: './assets/email.png'
       }
     ],
     data: {
@@ -62,22 +62,22 @@ self.addEventListener('message', (event) => {
     
     const notificationOptions = {
       body: `${data.name}: ${data.message}`,
-      icon: "assets/notification-icon.png",
+      icon: "./assets/notification-icon.png",
       actions: [
         {
           action: 'whatsapp',
           title: 'WhatsApp',
-          icon: 'assets/whatsapp.png'
+          icon: './assets/whatsapp.png'
         },
         {
           action: 'phone',
           title: 'Call',
-          icon: 'assets/telephone.png'
+          icon: './assets/telephone.png'
         },
         {
           action: 'email',
           title: 'Email',
-          icon: 'assets/email.png'
+          icon: './assets/email.png'
         }
       ],
       data: {
@@ -108,7 +108,7 @@ self.addEventListener('notificationclick', function(event) {
       url = data.email;
       break;
     default:
-      url = '/';
+      url = './';
   }
   
   event.waitUntil(clients.openWindow(url));

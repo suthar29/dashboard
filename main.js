@@ -66,21 +66,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("link-query").addEventListener("click", (e) => {
     e.preventDefault();
-    loadPage("pages/query.html");
+    loadPage("./pages/query.html");
   });
 
   document.getElementById("link-work").addEventListener("click", (e) => {
     e.preventDefault();
-    loadPage("pages/latestWork.html");
+    loadPage("./pages/latestWork.html");
   });
 
   document.getElementById("link-testimonials").addEventListener("click", (e) => {
     e.preventDefault();
-    loadPage("pages/testimonial.html");
+    loadPage("./pages/testimonial.html");
   });
 
   // Optional: Load default page on startup
-  loadPage("pages/query.html");
+  loadPage("./pages/query.html");
 });
 
 // Install Prompt
