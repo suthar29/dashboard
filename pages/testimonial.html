@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/style.css">
+<div class="container">
+    <div class="latest-header">
+        <h2 class="heading">Latest work</h2>
+        <button type="button" id="openModalBtn" class="add-new">Add New</button>
+    </div>
+    <div class="testimonial-container" id="testimonial-wrapper"></div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <form id="projectForm">
+            <input type="text" name="title" placeholder="Enter Name" required />
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="text" name="company" placeholder="Company" required />
+            <input type="file" name="image" accept="image/*" required />
+            <select name="rating" class="rating">
+                <option value="5">5</option>
+                <option value="4.5">4.5</option>
+                <option value="4">4</option>
+                <option value="3.5">3.5</option>
+                <option value="3">3</option>
+                <option value="2.5">2.5</option>
+                <option value="2">2</option>
+                <option value="1.5">1.5</option>
+                <option value="1">1</option>
+            </select>
+            <button type="submit" id="submitBtn">Save</button>
+          </form>
+        </div>
+      </div>
+
+</div>

@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/style.css">
+<div class="container">
+    <div class="latest-header">
+        <h2 class="heading">Latest work</h2>
+        <button type="button" id="openModalBtn" class="add-new">+  Add New</button>
+    </div>
+    <div class="projects-grid" id="projects-container">
+      
+    </div>
+
+    <!-- Add Project Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <form id="projectForm">
+            <input type="text" name="title" placeholder="Project Title" required />
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="text" name="github" placeholder="GitHub URL" required />
+            <input type="text" name="live" placeholder="Live Site URL" required />
+            <input type="file" name="image" accept="image/*" required />
+            <button type="submit" id="submitBtn">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- View Project Modal -->
+    <div id="viewModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeViewModal" class="close">&times;</span>
+        <div id="viewContent">
+          <img id="viewImage" src="" class="project-image-modal" alt="Project" />
+          <h3 id="viewTitle"></h3>
+          <p id="viewDescription"></p>
+        </div>
+      </div>
+    </div>
+
+</div>
